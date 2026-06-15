@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-base-950 font-body text-slate-200 antialiased transition-colors duration-300;
+    background-image: radial-gradient(circle at top, rgba(42, 153, 246, 0.16), transparent 30%),
+      radial-gradient(circle at 80% 10%, rgba(249, 115, 22, 0.16), transparent 22%),
+      linear-gradient(180deg, #07111f 0%, #0b1526 45%, #07111f 100%);
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(circle at center, black, transparent 78%);
+  }
+
+  ::selection {
+    @apply bg-brand-400/40 text-white;
+  }
+
+  .light body {
+    @apply text-slate-900;
+    background-image: radial-gradient(circle at top, rgba(42, 153, 246, 0.12), transparent 30%),
+      radial-gradient(circle at 80% 10%, rgba(249, 115, 22, 0.08), transparent 22%),
+      linear-gradient(180deg, #eff6ff 0%, #e0f2fe 45%, #f8fafc 100%);
+  }
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .glass-panel {
+    @apply border border-white/10 bg-white/5 shadow-glow backdrop-blur-xl;
+  }
+
+  .light .glass-panel {
+    @apply border-slate-200/70 bg-white/75;
+  }
+
+  .section-space {
+    @apply py-20 sm:py-24;
+  }
+
+  .section-card {
+    @apply rounded-[28px] glass-panel;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-brand-300 via-white to-orange-300 bg-clip-text text-transparent;
+  }
+
+  .light .text-gradient {
+    @apply from-brand-700 via-slate-900 to-accent-600;
+  }
+}

@@ -1,0 +1,16 @@
+<svg width="440" height="520" viewBox="0 0 440 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="30" y="30" width="380" height="460" rx="42" fill="url(#paint0_linear)"/>
+  <rect x="31" y="31" width="378" height="458" rx="41" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2"/>
+  <circle cx="220" cy="180" r="82" fill="#E5F4FF"/>
+  <path d="M220 272C147.099 272 88 331.099 88 404V414C88 424.493 96.5066 433 107 433H333C343.493 433 352 424.493 352 414V404C352 331.099 292.901 272 220 272Z" fill="#E5F4FF"/>
+  <path d="M164 175C164 144.072 189.072 119 220 119V119C250.928 119 276 144.072 276 175V194C276 224.928 250.928 250 220 250V250C189.072 250 164 224.928 164 194V175Z" fill="#8FD1FF"/>
+  <path d="M141 391C141 345.161 178.161 308 224 308H216C261.839 308 299 345.161 299 391V433H141V391Z" fill="#59B8FF"/>
+  <text x="220" y="72" text-anchor="middle" fill="#F8FBFF" font-family="Arial, sans-serif" font-size="26" font-weight="700">Profile Photo</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="63" y1="54" x2="402" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#163F6C"/>
+      <stop offset="0.55" stop-color="#137AD6"/>
+      <stop offset="1" stop-color="#07111F"/>
+    </linearGradient>
+  </defs>
+</svg>

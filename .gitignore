@@ -1,0 +1,10 @@
+node_modules/
+dist/
+build/
+.env
+.vite/
+.DS_Store
+.idea/
+.vscode/
+public/React.pdf
+public/Node.js.pdf
